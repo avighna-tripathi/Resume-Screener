@@ -18,7 +18,7 @@ import re
 load_dotenv()
 
 # Configure Google AI API 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 if not GOOGLE_API_KEY:
     st.error("Please set your GOOGLE_API_KEY in a .env file")
     st.stop()
